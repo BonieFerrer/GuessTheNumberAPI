@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: bonie.guessthenumberapi.data.RoundDaoDBTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.237 s <<< FAILURE! - in bonie.guessthenumberapi.data.RoundDaoDBTest
+testAddGetAllRound(bonie.guessthenumberapi.data.RoundDaoDBTest)  Time elapsed: 0.237 s  <<< ERROR!
+org.springframework.dao.DataIntegrityViolationException: PreparedStatementCallback; SQL [INSERT INTO round(game_id, guess, result) VALUES(?,?,?)]; Cannot add or update a child row: a foreign key constraint fails (`guessthenumberdbtest`.`round`, CONSTRAINT `round_ibfk_1` FOREIGN KEY (`game_id`) REFERENCES `game` (`game_Id`)); nested exception is java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`guessthenumberdbtest`.`round`, CONSTRAINT `round_ibfk_1` FOREIGN KEY (`game_id`) REFERENCES `game` (`game_Id`))
+	at bonie.guessthenumberapi.data.RoundDaoDBTest.testAddGetAllRound(RoundDaoDBTest.java:74)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`guessthenumberdbtest`.`round`, CONSTRAINT `round_ibfk_1` FOREIGN KEY (`game_id`) REFERENCES `game` (`game_Id`))
+	at bonie.guessthenumberapi.data.RoundDaoDBTest.testAddGetAllRound(RoundDaoDBTest.java:74)
+

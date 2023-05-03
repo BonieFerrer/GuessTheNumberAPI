@@ -1,0 +1,12 @@
+bonie\guessthenumberapi\App.class
+bonie\guessthenumberapi\service\ServiceLayer.class
+bonie\guessthenumberapi\data\GameDaoDB$GameMapper.class
+bonie\guessthenumberapi\controller\Controller.class
+bonie\guessthenumberapi\data\RoundDao.class
+bonie\guessthenumberapi\data\RoundDaoDB$RoundMapper.class
+bonie\guessthenumberapi\TestApplicationConfiguration.class
+bonie\guessthenumberapi\data\GameDao.class
+bonie\guessthenumberapi\models\Game.class
+bonie\guessthenumberapi\models\Round.class
+bonie\guessthenumberapi\data\RoundDaoDB.class
+bonie\guessthenumberapi\data\GameDaoDB.class

@@ -1,0 +1,28 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package bonie.guessthenumberapi;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.FilterType;
+
+/**
+ *
+ * @author Bonie_TSG
+ */
+
+/* Finally, because we are using a CommandLineRunner class,
+we need to add a TestApplicationConfiguration class. Inside of it will be: */
+
+@Configuration
+@ComponentScan(excludeFilters = @ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, 
+ value = CommandLineRunner.class))
+@EnableAutoConfiguration
+public class TestApplicationConfiguration {
+    
+}
